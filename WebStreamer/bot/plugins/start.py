@@ -53,7 +53,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hey Welcome To 𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧!!\n\nI'm Instant Telegram File to Link Generator Bot.\n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels Alone ⚠!',
+            text='🙋 Hey Welcome To 𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧!!\n\nI Am Instant Telegram File to Link Generator Bot.\n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels Alone ⚠!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots'), InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧', url='https://t.me/FlixHelpBot')],
