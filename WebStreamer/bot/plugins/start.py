@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**LINK SUCCESSFULLY GENERATED!!\n\n**📁 File Name :** `{}`\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**THANKS FOR USING @INSTANTFLIXBOT :)**."
+        msg_text = "**LINK SUCCESSFULLY GENERATED!!**\n\n**📁 File Name :** `{}`\n\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 @InstantFlixBot 🥳**."
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link)
         )
