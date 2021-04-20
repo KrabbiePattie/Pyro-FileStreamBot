@@ -85,7 +85,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/AH_File2Link_Bot?start=view_{usr_cmd}")
+                                                     url=f"https://t.me/InstantFlixBot?start=view_{usr_cmd}")
                             ]
                         ]
                     ),
