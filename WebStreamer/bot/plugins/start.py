@@ -26,7 +26,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -48,16 +48,16 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
+            text='🙋 Hey Welcome To 𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧!!\n\nI'm Instant Telegram File to Link Generator Bot.\n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels Alone ⚠!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')],
-                    [InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')]
+                    [InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots'), InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧', url='https://t.me/FlixHelpBot')],
+                    [InlineKeyboardButton('𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/Iggie')]
                 ]
             ),
             disable_web_page_preview=True
@@ -69,7 +69,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -85,7 +85,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/AH_File2Link_Bot?start=AbirHasan2005_{usr_cmd}")
+                                                     url=f"https://t.me/AH_File2Link_Bot?start=view_{usr_cmd}")
                             ]
                         ]
                     ),
@@ -95,7 +95,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "**LINK SUCCESSFULLY GENERATED!!\n\n**📁 File Name :** `{}`\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**THANKS FOR USING @INSTANTFLIXBOT :)**."
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link)
         )
@@ -143,7 +143,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -165,18 +165,18 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Send me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
+        text="Add Me To Channel As Admin With The Appropriate Rights To Make Me Workable!! \n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels ⚠",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"), InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
+                [InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots"), InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧", url="https://t.me/FlixHelpBot")],
+                [InlineKeyboardButton("𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/Iggie")]
             ]
         )
     )
