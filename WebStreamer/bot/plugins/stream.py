@@ -28,8 +28,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/InstantFlixBot?start=view_{str(log_msg.message_id)}")],
-                    [InlineKeyboardButton("👥 Share Link", url=f"https://t.me/share/url?url=https://t.me/InstantFlixBot?start=view_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/InstantFlixBot?start=view_{str(log_msg.message_id)}")]
                 ]
             )
         )
