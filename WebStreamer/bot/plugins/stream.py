@@ -101,7 +101,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/streamtgfiles?start=view_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/StreamTGFilesBot?start=view_{str(log_msg.message_id)}")]
                 ]
             )
         )
