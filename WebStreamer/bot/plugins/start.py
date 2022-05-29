@@ -172,7 +172,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Add Me To Channel As Admin With The Appropriate Rights To Make Me Workable!! \n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels ⚠",
+        text="Add Me To Channel As Admin With The Appropriate Rights To Make Me Workable!!",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
