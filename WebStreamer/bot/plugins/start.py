@@ -53,11 +53,11 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hey Welcome To 𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗙𝗟𝗜𝗫 𝗕𝗢𝗧!!\n\nI Am Instant Telegram File to Link Generator Bot.\n\n𝗡𝗢𝗧𝗘 : I Only Work In Channels Alone ⚠!',
+            text='🙋 Hey Welcome To 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗙𝗜𝗟𝗘 𝗧𝗢 𝗟𝗜𝗡𝗞 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥 𝗕𝗢𝗧!!\n\nI Am Instant Telegram File to Link Generator Bot.\n\nSend Me Any Telegram File/Documents & I'll Generate An Instant Link Back To You!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots'), InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧', url='https://t.me/FlixHelpBot')],
-                    [InlineKeyboardButton('𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/Iggie')]
+                    [InlineKeyboardButton('🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots')],
+                    [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/Iggie')]
                 ]
             ),
             disable_web_page_preview=True
@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**LINK SUCCESSFULLY GENERATED!!**\n\n**📁 File Name :** `{}`\n\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 @InstantFlixBot 🥳**."
+        msg_text = "**LINK SUCCESSFULLY GENERATED!!**\n\n**📁 File Name :** `{}`\n\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲 🥳**."
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -177,8 +177,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots"), InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧", url="https://t.me/FlixHelpBot")],
-                [InlineKeyboardButton("𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/Iggie")]
+                [InlineKeyboardButton("🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots")],
+                [InlineKeyboardButton("🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/Iggie")]
             ]
         )
     )
