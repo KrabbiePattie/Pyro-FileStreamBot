@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**LINK SUCCESSFULLY GENERATED!! 🤓**\n\n**Copy & Paste This Link In Your Browser & The File Download Will Start Immediately!!**\n\n**📁 File Name :** `{}`\n\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲 🥳**."
+        msg_text = "**LINK SUCCESSFULLY GENERATED!! 🤓**\n\n**Copy & Paste This Link In Your Browser & The File Download Will Start Immediately!!**\n\n**📁 File Name :** `{}`\n\n**🔓 File Size :** `{}`\n\n**⭕️ Download Link :** `{}`."
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
