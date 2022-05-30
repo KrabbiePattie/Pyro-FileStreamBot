@@ -20,7 +20,6 @@ def get_media_file_size(m):
 def get_media_file_name(m):
     media = m.video or m.document or m.audio
     if media and media.file_name:
-        return media.file_name
         return urllib.parse.quote_plus(media.file_name)
     else:
         return None
