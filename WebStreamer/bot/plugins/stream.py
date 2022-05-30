@@ -67,25 +67,13 @@ async def private_receive_handler(c: Client, m: Message):
             return
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = "https://{}/{}".format(Var.FQDN, log_msg.message_id) if Var.ON_HEROKU or Var.NO_PORT else \
-            "http://{}:{}/{}".format(Var.FQDN,
+        file_name = get_media_file_name(m)
+        file_size = humanbytes(get_media_file_size(m))
+        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
+            "http://{}:{}/{}/{}".format(Var.FQDN,
                                     Var.PORT,
-                                    log_msg.message_id)
-        file_size = None
-        if m.video:
-            file_size = f"{humanbytes(m.video.file_size)}"
-        elif m.document:
-            file_size = f"{humanbytes(m.document.file_size)}"
-        elif m.audio:
-            file_size = f"{humanbytes(m.audio.file_size)}"
-
-        file_name = None
-        if m.video:
-            file_name = f"{m.video.file_name}"
-        elif m.document:
-            file_name = f"{m.document.file_name}"
-        elif m.audio:
-            file_name = f"{m.audio.file_name}"
+                                    log_msg.message_id,
+                                    file_name)
 
         msg_text = "**LINK SUCCESSFULLY GENERATED!! 🤓**\n\n**Copy & Paste This Link In Your Browser & The File Download Will Start Immediately!!**\n\n**📁 File Name:** `{}`\n\n**🔓 File Size:** `{}`\n\n⭕️ **Download Link:** `{}`"
         await log_msg.reply_text(text=f"Requested by [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n**User ID:** `{m.from_user.id}`\n\n**Download Link:** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
@@ -107,7 +95,7 @@ async def channel_receive_handler(bot, broadcast):
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         await log_msg.reply_text(
-            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/DownloadURLBot?start=view_{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/{(await bot.get_me()).username}?start=view_{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
@@ -116,7 +104,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/DownloadURLBot?start=view_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("📩 Direct Download", url=f"https://t.me/{(await bot.get_me()).username}?start=view_{str(log_msg.message_id)}")]
                 ]
             )
         )
