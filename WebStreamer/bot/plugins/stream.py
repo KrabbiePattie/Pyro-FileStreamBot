@@ -1,6 +1,7 @@
 # (c) @EverythingSuckz | @AbirHasan2005
 
 import asyncio
+import urllib.parse
 from WebStreamer.bot import StreamBot
 from WebStreamer.utils.database import Database
 from WebStreamer.utils.human_readable import humanbytes
@@ -9,6 +10,20 @@ from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+
+def get_media_file_size(m):
+    media = m.video or m.audio or m.document
+    if media and media.file_size:
+        return media.file_size
+    else:
+        return None
+def get_media_file_name(m):
+    media = m.video or m.document or m.audio
+    if media and media.file_name:
+        return media.file_name
+        return urllib.parse.quote_plus(media.file_name)
+    else:
+        return None
 
 @StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited, group=4)
 async def private_receive_handler(c: Client, m: Message):
