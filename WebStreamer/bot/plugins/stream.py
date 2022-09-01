@@ -108,7 +108,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📩 DIRECT DOWNLOAD 📩", url=f"https://t.me/{(await bot.get_me()).username}?start=view_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("📩  DIRECT DOWNLOAD  📩", url=f"https://t.me/{(await bot.get_me()).username}?start=view_{str(log_msg.message_id)}")]
                 ]
             )
         )
