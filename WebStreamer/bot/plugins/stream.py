@@ -83,6 +83,7 @@ async def private_receive_handler(c: Client, m: Message):
                     [InlineKeyboardButton("📩 DIRECT DOWNLOAD 📩", url=stream_link)],
                     [InlineKeyboardButton("FREE NETFLIX ACCOUNTS 💯", url="https://t.me/+xPvyu36YNV83YWVk")],
                 ]
+            )
             quote=True
         )
     except FloodWait as e:
