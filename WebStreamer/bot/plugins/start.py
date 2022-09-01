@@ -71,7 +71,7 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots')],
-                    [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/Iggie')]
+                    [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/FristyFlakes')]
                 ]
             ),
             disable_web_page_preview=True
