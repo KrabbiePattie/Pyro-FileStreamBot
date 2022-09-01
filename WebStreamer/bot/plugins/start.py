@@ -129,7 +129,12 @@ async def start(b, m):
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📩 Download Now", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton("📩  DIRECT DOWNLOAD  📩", url=stream_link)],
+                    [InlineKeyboardButton("⚠ FREE NETFLIX ACCOUNTS ⚠", url="https://t.me/+xPvyu36YNV83YWVk")],
+                ]
+            )
         )
 
 
@@ -180,7 +185,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots")],
-                [InlineKeyboardButton("🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/Iggie")]
+                [InlineKeyboardButton("🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/FristyFlakes")]
             ]
         )
     )
