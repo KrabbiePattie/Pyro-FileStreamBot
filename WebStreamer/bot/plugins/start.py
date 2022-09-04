@@ -52,7 +52,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/+ieAUoN0k7aFjYmE0")
                             ]
                         ]
                     ),
@@ -95,7 +95,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/+ieAUoN0k7aFjYmE0")
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
@@ -132,7 +132,7 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("📩  DIRECT DOWNLOAD  📩", url=stream_link)],
-                    [InlineKeyboardButton("⚠ FREE NETFLIX ACCOUNTS ⚠", url="https://t.me/+xPvyu36YNV83YWVk")],
+                    [InlineKeyboardButton("⚠ FREE NETFLIX ACCOUNTS ⚠", url="https://t.me/+ieAUoN0k7aFjYmE0")],
                 ]
             )
         )
@@ -164,7 +164,7 @@ async def help_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/+ieAUoN0k7aFjYmE0")
                         ]
                     ]
                 ),
