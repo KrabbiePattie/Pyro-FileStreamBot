@@ -82,7 +82,7 @@ async def private_receive_handler(c: Client, m: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("📩  DIRECT DOWNLOAD  📩", url=stream_link)],
-                    [InlineKeyboardButton("⚠ FREE NETFLIX ACCOUNTS ⚠", url="https://t.me/+ieAUoN0k7aFjYmE0")],
+                    [InlineKeyboardButton("🌝 SPY WHATSAPP APP FOR FREE 🌚", url="https://t.me/+ZlIQAJtbK3MxNGZk")],
                 ]
             )
         )
