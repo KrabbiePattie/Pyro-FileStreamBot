@@ -72,7 +72,7 @@ async def start(b, m):
                 [
                     [InlineKeyboardButton('🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots')],
                     [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/FristyFlakes')],
-                    [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url="https://t.me/+ZlIQAJtbK3MxNGZk')]
+                    [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url='https://t.me/+ZlIQAJtbK3MxNGZk')]
                 ]
             ),
             disable_web_page_preview=True
@@ -187,7 +187,7 @@ async def help_handler(bot, message):
             [
                 [InlineKeyboardButton("🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots")],
                 [InlineKeyboardButton("🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/FristyFlakes")],
-                [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url="https://t.me/+ZlIQAJtbK3MxNGZk')]
+                [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url='https://t.me/+ZlIQAJtbK3MxNGZk')]
             ]
         )
     )
