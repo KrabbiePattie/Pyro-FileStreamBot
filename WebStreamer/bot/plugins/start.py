@@ -71,7 +71,8 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/FlixBots')],
-                    [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/FristyFlakes')]
+                    [InlineKeyboardButton('🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥', url='https://t.me/FristyFlakes')],
+                    [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url="https://t.me/+ZlIQAJtbK3MxNGZk')]
                 ]
             ),
             disable_web_page_preview=True
@@ -132,7 +133,7 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("📩  DIRECT DOWNLOAD  📩", url=stream_link)],
-                    [InlineKeyboardButton("⚠ FREE NETFLIX ACCOUNTS ⚠", url="https://t.me/+ieAUoN0k7aFjYmE0")],
+                    [InlineKeyboardButton("🌝 SPY WHATSAPP APP FOR FREE 🌚', url="https://t.me/+ZlIQAJtbK3MxNGZk")],
                 ]
             )
         )
@@ -185,7 +186,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🔊 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/FlixBots")],
-                [InlineKeyboardButton("🙎 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥", url="https://t.me/FristyFlakes")]
+                [InlineKeyboardButton('🌝 SPY WHATSAPP APP FOR FREE 🌚', url="https://t.me/+ZlIQAJtbK3MxNGZk')]
             ]
         )
     )
